@@ -5,6 +5,9 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
+	<?php
+		include("header.html")
+	?>
 	<style>
 		.card{
 			width:400px;
@@ -44,6 +47,9 @@
 			</div>
 		</div>
 	</section>
+	<?php
+		include("footer.html")
+	?>
 	<script src="js/jquery-3.2.1.slim.min.js"></script>
 		<script src="js/popper.min.js"></script>    
 		<script src="js/bootstrap.min.js"></script> 

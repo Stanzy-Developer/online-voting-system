@@ -68,13 +68,11 @@ CREATE TABLE IF NOT EXISTS `candidates` (
 -- Dumping data for table `candidates`
 --
 
-INSERT INTO `candidates` (`id`, `name`, `email`, `mobile`, `branch`, `rollno`, `enrollid`, `approve_status`) VALUES
-(31, 'Abhay', 'mayank@gmail.com', 1234, 'Information Technology', 2314, '1324', 0),
-(30, 'Abhay', 'mayank@gmail.com', 1234, 'Information Technology', 2314, '1324', 2),
-(29, 'Abhay', 'mayank@gmail.com', 485, 'Information Technology', 6845, '85', 2),
-(28, 'Mayank', 'mayank@gmail.com', 626887802, 'Information Technology', 205503318002, 'BF667@csvtu.ac.in', 1),
-(26, 'Prakash', 'prakashverma@gmail.com', 6268882620, 'Information Technology', 525296, 'sdfsdfgr', 1),
-(27, 'Aditya Kumar', 'adityakumarverified@gmail.com', 6268887802, 'Information Technology', 205503318002, 'sdfsafd', 1);
+INSERT INTO `candidates` (`name`, `email`, `mobile`, `branch`, `rollno`, `enrollid`, `approve_status`) VALUES
+('Stanley', 'Stanley@gmail.com', 1234, 'Information System Management', 2314, '1324', 1),
+('Bassam', 'Bassam@gmail.com', 1234, 'Information System Management', 2314, '1324', 0),
+('Favour', 'Favour@gmail.com', 485, 'Information System Management', 6845, '85', 0),
+('Fortune', 'Fortune@gmail.com', 626887802, 'Information System Management', 205503318002, 'BF667@csvtu.ac.in', 1),
 
 -- --------------------------------------------------------
 
@@ -100,8 +98,8 @@ CREATE TABLE IF NOT EXISTS `candidate_2nd` (
 --
 
 INSERT INTO `candidate_2nd` (`id`, `name`, `email`, `mobile`, `branch`, `rollno`, `enrollid`, `approve_status`) VALUES
-(1, 'Mayank', 'mayank@gmail.com', 1238846, 'Information Technology', 68468, 'sdfsdf', 1),
-(2, 'Mayank', 'adfi8edhfousah@gmail.com', 65, 'Information Technology', 2005002, 'sdes', 1);
+(1, 'Mayank', 'mayank@gmail.com', 1238846, 'Software Engineering', 68468, 'sdfsdf', 1),
+(2, 'Chi', 'Chi@gmail.com', 65, 'Software Engineering', 2005002, 'sdes', 1);
 
 -- --------------------------------------------------------
 
@@ -127,9 +125,9 @@ CREATE TABLE IF NOT EXISTS `candidate_3rd` (
 --
 
 INSERT INTO `candidate_3rd` (`id`, `name`, `email`, `mobile`, `branch`, `rollno`, `enrollid`, `approve_status`) VALUES
-(1, 'Mayank', 'mayank@gmail.com', 32412, 'Information Technology', 3342, '432', 1),
-(2, 'Parinay', 'mayank@gmail.com', 6269888, 'Mechanical', 6849545, '32432', 1),
-(3, 'Abhay', 'mayank@gmail.com', 626887802, 'Information Technology', 5255152, '3242134', 1);
+(1, 'MaloBalo', 'MaloBalo@gmail.com', 32412, 'Cyber Security', 3342, '432', 1),
+(2, 'Brice', 'Brice@gmail.com', 6269888, 'Cyber Security', 6849545, '32432', 2),
+(3, 'Precious', 'Precious@gmail.com', 626887802, 'Digital Marketing', 5255152, '3242134', 1);
 
 -- --------------------------------------------------------
 
@@ -151,8 +149,7 @@ CREATE TABLE IF NOT EXISTS `contact` (
 --
 
 INSERT INTO `contact` (`id`, `name`, `email`, `message`) VALUES
-(1, 'Aditya', 'adityakumarverified@gmail.com', 'nothing'),
-(2, 'Aditya', 'adityakumarverified@gmail.com', 'nothing');
+(1, 'Stanley', 'Stanley@gmail.com', 'nothing');
 
 -- --------------------------------------------------------
 
@@ -176,7 +173,7 @@ CREATE TABLE IF NOT EXISTS `suggestion` (
 --
 
 INSERT INTO `suggestion` (`id`, `name`, `email`, `number`, `rollno`, `suggestion`) VALUES
-(1, 'Aditya', 'adityakumarverified@gmail.com', 9898, 651, 'Nothing');
+(1, 'Stanley', 'Stanley@gmail.com', 9898, 651, 'Nothing');
 
 -- --------------------------------------------------------
 

@@ -41,14 +41,14 @@ include("header.html");
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="h2_3"> Select Result Year</h2>
-            <a href="validation.php"><button style="margin-top:40px;" class="btn-special-2">1<sup>st</sup> Year </button></a>
+                <h2 class="h2_3"> Select Result From</h2>
+            <a href="validation.php"><button style="margin-top:40px;" class="btn-special-2">ESG</button></a>
             </div>
             <div class="col-md-12">
-            <a href="validation_2.php"><button style="margin-top:60px;" class="btn-special-2">2<sup>nd</sup> Year </button></a>
+            <a href="validation_2.php"><button style="margin-top:60px;" class="btn-special-2">IUC</button></a>
             </div>
             <div class="col-md-12">
-            <a href="validation_3.php"><button style="margin-top:60px; " class="btn-special-2">3<sup>rd</sup> Year </button></a>
+            <a href="validation_3.php"><button style="margin-top:60px; " class="btn-special-2">OTHERS</button></a>
             </div>
         </div>
     </div>

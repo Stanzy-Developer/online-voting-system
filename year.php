@@ -37,14 +37,14 @@ include("header.html");
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-            <h2 class="h2_1">Select Voting Year</h2>
-            <a href="candidate.php"><button style="margin-top:50px;" class="btn-special-2">1<sup>st</sup> Year </button></a>
+            <h2 class="h2_1">Select Candidate From</h2>
+            <a href="candidate.php"><button style="margin-top:50px;" class="btn-special-2">ESG</button></a>
             </div>
             <div class="col-md-12">
-            <a href="2nd_cand.php"><button style="margin-top:60px;" class="btn-special-2">2<sup>nd</sup> Year </button></a>
+            <a href="2nd_cand.php"><button style="margin-top:60px;" class="btn-special-2">ISA</button></a>
             </div>
             <div class="col-md-12">
-            <a href="3rd_cand.php"><button style="margin-top:60px; " class="btn-special-2">3<sup>rd</sup> Year </button></a>
+            <a href="3rd_cand.php"><button style="margin-top:60px; " class="btn-special-2">ISTA</button></a>
             </div>
         </div>
     </div>

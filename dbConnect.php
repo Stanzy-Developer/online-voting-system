@@ -1,7 +1,6 @@
 <?php
 
-
-$dsn = "mysql:host=localhost;dbname=voting";
+$dsn = "mysql:host=localhost;dbname=voting_system";
 $user = "root";
 $pass = "";
 $option = [PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION,PDO::FETCH_ASSOC];

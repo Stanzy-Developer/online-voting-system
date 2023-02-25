@@ -14,6 +14,7 @@
     
     <!--- Custom Css --->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/input.css" />
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,7 +29,8 @@
     border-radius: 6px;
     position: relative;
     overflow: hidden;
-    transition: all 0.5s cubic-bezier(1,.15,.34,.92)
+    transition: all 0.5s cubic-bezier(1,.15,.34,.92);
+    cursor: pointer;
 }
 
 .slideUpBtn span {
@@ -90,25 +92,28 @@
 <div class="container-fluid" id="cont-3">
 <header id="nav-bar">
   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <a class="navbar-brand" href=index.html  style="color: white; font-weight: 600; margin-top: 15px;">GO VOTE</a>
+    <a href="index.html"  style="color: white; font-weight: 600;"><img src="img/logo-removebg-preview.png" height="100px" width="100px" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon" style="color: white;"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto animate__animated animate__bounceInDown" style="padding-right: 50px;">
         <li class="nav-item" >
-          <a class="nav-link" href="index.html" style="color:white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Home</a>
+          <a class="nav-link" href="index.html" style="color:white; font-weight: 600; text-align: center; font-size: 18px;  text-transform: capitalize; padding: 20px;">Home</a>
         </li>
         <li class="nav-item" >
-          <a class="nav-link" href="year.php"  style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Candidate</a>
+          <a class="nav-link" href="year.php"  style="color: white; font-weight: 600; text-align: center; font-size: 18px;  text-transform: capitalize; padding: 20px;">Candidate</a>
         </li>
       
         <li class="nav-item">
-          <a class="nav-link" href="result.php" style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Result</a>
+          <a class="nav-link" href="result.php" style="color: white; font-weight: 600; text-align: center; font-size: 18px;  text-transform: capitalize; padding: 20px;">Result</a>
         </li>
       
         <li class="nav-item" >
-          <a class="nav-link" href="about.php"  style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">About</a>
+          <a class="nav-link" href="about.php"  style="color: white; font-weight: 600; text-align: center; font-size: 18px;  text-transform: capitalize; padding: 20px;">About</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" href="admin_login.php"  style="color: white; font-weight: 600; text-align: center; font-size: 18px;  text-transform: capitalize; padding: 20px;">Log In</a>
         </li>
       
       </ul>
@@ -124,7 +129,7 @@
       <div class="col-md-6 animate__animated animate__bounceInLeft" style="text-align: center;">
         <h1>ONLINE VOTING SYSTEM</h1>
         <p>Online voting systems are software platforms used to securely conduct votes and elections. As a digital platform, they eliminate the need to cast your votes using paper or having to gather in person.</p>
-      <a href="candidate.php"><button class="magnifyBtn">VOTE NOW</button></a>
+      <a href="year.php"><button class="magnifyBtn">VOTE NOW</button></a>
       </div>
       
       <div class="col-md-6"> 
@@ -161,7 +166,7 @@
 
 
       <div class="col-md-12">
-      <a href="candidate.php" ><span ><button style="margin-top: 20px;" class="slideUpBtn">Vote Now</button></span></a>
+      <a href="year.php" ><span ><button style="margin-top: 20px;" class="slideUpBtn">Vote Now</button></span></a>
     </div>  
     </div>
   </div>
@@ -213,7 +218,7 @@
               
               </tr>
               <tr>
-              <td style="padding-top: 50px; padding-bottom: 30px;"><button class="magnifyBtn">Submit</button></a></td>
+              <td style="padding-top: 50px; padding-bottom: 30px;"><button class="magnifyBtn" style="cursor: pointer;">Submit</button></a></td>
               </tr>
             </table>
           </form>
@@ -241,7 +246,7 @@
           If you want to become a candidate, then you click on the link below, then you will be redirected. In the second
            page, by filling that, you can request for a candidateAfter that, the administrator will approve your request so you can become a candidate.
            </p>
-           <a href="insert_cand_year.php"><button class="magnifyBtn" style="margin-bottom: 40px;">Apply</button></a>
+           <a href="insert_cand_year.php"><button class="magnifyBtn" style="margin-bottom: 40px; cursor: pointer;">Apply</button></a>
       </div>
     </div>
     </div>
@@ -251,61 +256,74 @@
 <!------------------  Footer Section ------------------>
 
 <section>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6">
-      <hr>
-      <div class="Footer">
-        <ul style="display: flex;">
-          <li style="list-style: none; padding: 10px; "><a href="index.html" style="text-decoration: none; color: #a517ba;">Home</a></li>
-          <li style="list-style: none; padding: 10px; "><a href="about.php" style="text-decoration: none; color: #a517ba;">About</a></li>
-          <li style="list-style: none; padding: 10px; "><a href="suggestion.html" style="text-decoration: none; color: #a517ba;">Suggestion</a></li>
-          <li style="list-style: none; padding: 10px; "><a href="contact_form.php" style="text-decoration: none; color: #a517ba;">Contact</a></li>
-        </ul>
-      </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"></div>
     </div>
-    <div class="col-md-6">
-      <hr>
-      <div class="social-icon">
-        <ul >
-                        <li>
-                            <a href="">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fa fa-pinterest"></i>
-                            </a>
-                        </li>
-                    </ul>
+  </div>
+</section>
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <hr />
+        <div class="Footer">
+          <ul style="display: flex">
+            <li style="list-style: none; padding: 10px">
+              <a
+                href="index.html"
+                style="text-decoration: none; color: #a517ba"
+                >Home</a
+              >
+            </li>
+            <li style="list-style: none; padding: 10px">
+              <a
+                href="about.php"
+                style="text-decoration: none; color: #a517ba"
+                >About</a
+              >
+            </li>
+            <li style="list-style: none; padding: 10px">
+              <a
+                href="suggestion.html"
+                style="text-decoration: none; color: #a517ba"
+                >Suggestion</a
+              >
+            </li>
+            <li style="list-style: none; padding: 10px">
+              <a
+                href="contact_form.php"
+                style="text-decoration: none; color: #a517ba"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <hr />
+        <div style="text-align: center; margin: auto auto">
+          <p style="text-align: center; margin: auto auto; padding: 15px">
+            Copyright© 2022 Clings Technology. All Rights Reserved.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </section>
-
+<div>
+  <div id="scroll" style="position: fixed; font-size: 30px; right:20px; bottom: 20px; padding: 10px 15px; border-radius: 50%; background-color: rgb(249 115 22);
+ cursor: pointer;">
+    <i class="fa fa-chevron-up"></i>
+  </div>
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>    
     <script src="js/bootstrap.min.js"></script>  
+    <script src="anim.js"></script>  
  
   </body>
 </html>

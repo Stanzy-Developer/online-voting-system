@@ -4,7 +4,7 @@ session_start();
 // form data received
 
 $username = $_REQUEST['username'];
-$password = md5($_REQUEST['password']);
+$password = $_REQUEST['password'];
 
 include('dbConnect.php');
 
